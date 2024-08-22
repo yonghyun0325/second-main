@@ -9,6 +9,7 @@ import LikeButton from './LikeButton';
 import { FaShareAlt } from 'react-icons/fa';
 import coffee1 from './picture/coffee1.jpg'
 import coffee2 from './picture/coffee2.jpg'
+import { Link } from 'react-router-dom';
 
 function App() {
   const sliderSettings = {
@@ -31,10 +32,10 @@ function App() {
               </div>
             </Slider>
             <div className='menu_bar'>
-              <a href='#project-story'><ul>프로젝트 이야기</ul></a>
-              <a href='/'><ul>업데이트</ul></a>
-              <a href='/'><ul>커뮤니티</ul></a>
-              <a href='/'><ul>후기</ul></a>
+              <ul><a href='#project-story'>프로젝트 이야기</a></ul>
+              <ul><a href='#update'>업데이트</a></ul>
+              <ul><a href='#community'>커뮤니티</a></ul>
+              <ul><a href='#reviews'>후기</a></ul>
             </div>
             <p>
               <br />
@@ -148,5 +149,6 @@ function App() {
         </div>
       );
     }
+    
 
 export default App;
